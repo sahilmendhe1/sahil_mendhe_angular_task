@@ -1,4 +1,4 @@
-import { Component , OnInit , Input} from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 
 @Component({
@@ -6,13 +6,14 @@ import { Component , OnInit , Input} from '@angular/core';
   templateUrl: './parentchild.component.html',
   styleUrls: ['./parentchild.component.css']
 })
-export class ParentchildComponent implements OnInit  {
-title = 'angApp';
-@Input() myinputMsg: string="";
-constructor() { }
-myinputMessage: string="I am Parent component";
-ngOnInit() {
-  console.log(this.myinputMessage);
-  
-}
+export class ParentchildComponent implements OnInit {
+  title = 'angApp';
+  @Input() myinputMsg: string = "";
+  constructor() { }
+  myInputMessage: string ="I am parent component";
+
+  ngOnInit(): void {
+    console.log(this.myinputMsg);
+
+  }
 }

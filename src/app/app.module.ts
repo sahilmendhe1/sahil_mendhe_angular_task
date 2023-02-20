@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, NgForm } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { ButtonDirective } from './button.directive';
@@ -13,6 +13,11 @@ import { ReactivedrivenformComponent } from './reactivedrivenform/reactivedriven
 import { DateService } from './date.service';
 import { BookserviceService } from './bookservice.service';
 import { ParentchildComponent } from './parentchild/parentchild.component';
+import { OutputComponent } from './output/output.component';
+import { LoginpassingdatabetweencomponentsComponent } from './loginpassingdatabetweencomponents/loginpassingdatabetweencomponents.component';
+import { CourseListComponent } from './course-list/course-list.component';
+import { ReactiveFormsModule} from '@angular/forms';
+
 
 @NgModule({
   declarations: [
@@ -25,11 +30,17 @@ import { ParentchildComponent } from './parentchild/parentchild.component';
     SalutationPipe,
     TemplatedrivenformComponent,
     ReactivedrivenformComponent,
-    ParentchildComponent
+    ParentchildComponent,
+    OutputComponent,
+    LoginpassingdatabetweencomponentsComponent,
+    CourseListComponent,
+    
   ],
   imports: [
     BrowserModule,
     FormsModule,
+    ReactiveFormsModule,
+    
   ],
   providers: [DateService,BookserviceService],
   bootstrap: [AppComponent]

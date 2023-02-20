@@ -1,17 +1,20 @@
 import { Component } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 import { DateService } from './date.service';
+import { LoginpassingdatabetweencomponentsComponent } from './loginpassingdatabetweencomponents/loginpassingdatabetweencomponents.component';
+import { CourseListComponent } from './course-list/course-list.component';
 
-// @NgModule({
-//   declarations: [ Component ],
-//   imports: [ BrowserModule],
-//   providers: [],
-//   bootstrap: [ Component ]
-// })
-// export class AppModule {
-// }
+
+@NgModule({
+  declarations: [ Component ],
+  imports: [ BrowserModule],
+  providers: [],
+  bootstrap: [ Component ]
+})
+export class AppModule {
+}
+
 
 
 // export { Component };
@@ -21,7 +24,12 @@ import { DateService } from './date.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  // title = 'demo';
+//   show:boolean=false;
+//   title = 'app';
+//   firstname = 'Sahil';
+//   username = '';
+
+// myInputMessage: string="I am Child component";
 //task 2--Transaction table
   // Select: any[] = [{name: 'One',val:1}, {name: 'Two',val:2}, {name: 'Three',val:3}];
   // selectedValue: string='One';
@@ -104,14 +112,15 @@ export class AppComponent {
       //   this.loginFailed = true;
       //   // alert("Failed")
       // }
-today : string="";
-constructor(private DateService: DateService) {
+// today : string="";
+// myInputMessage: string ="I am parent component";
+// constructor(private DateService: DateService) {
 
-    }
+//     }
 
-    ngOnInit() {
-this.today=this.DateService.getTodayDate();
-    }
+//     ngOnInit() {
+// this.today=this.DateService.getTodayDate();
+//     }
   // }
   
   // validate() {
@@ -139,4 +148,23 @@ this.today=this.DateService.getTodayDate();
 //  billAmount:number=1;
 //  transaction:string=""
 // }
-  }
+// GetChildData(data:any) {
+//   console.log(data);
+  
+// }
+// message: string="";
+// count: number = 0; 
+//  courseReg(courseName: string) {
+//   this.message = `Your registration for ${courseName} is successful`;
+//  }
+
+// updateFromChild($event:number){
+// this.count = $event;
+
+
+
+courseitems: any[] = [{name: 'Node Js', id: 1}, {name: 'Typescript', id: 2}, {name: 'Angular', id: 3}, {name: 'React Js', id: 4}];
+  selectedCourseValue: number = 1;
+ }
+  
+

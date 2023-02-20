@@ -109,5 +109,64 @@
 <!-- <div>
   date{{today}}
 </div> -->
-<app-parentchild></app-parentchild>
+<!-- Input myInputMessage -->
+<!-- <div>
+  <h1>Welcome to app</h1>
+  <h2>I am Parent</h2>
+  <div>
+      <app-parentchild [myinputMsg]="myInputMessage"></app-parentchild>
+  </div>
+</div> -->
+<!-- 1.	<app-output [myinputMsg]="myInputMessage" (myOutput) ="GetChildData($event)"></app-output>    -->
+<!-- 1.	<app-book [bookToDisplay]="userBook" ></app-book>  -->
+<!-- 1.	<img [src]="iconUrl">  -->
+<!-- <div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+  <!-- <app-login [username]="firstname"> </app-login> -->
+<!-- </div> -->
+<!-- <h2> Course Details </h2> --> 
 
+<!-- Select a course to view <select #course (change)="name" = course.value">
+  <option value="Node JS">Node JS</option>
+  <option value="Typescript">Typescript</option>
+  <option value="Angular">Angular</option>
+  <option value="React JS">React JS</option>
+</select><br /><br /> -->
+
+<!-- <app-course-list [cName]="name"></app-course-list> -->
+<!-- <div style="text-align:center"> -->
+<!-- <app-login (customevent)="updateFromChild($event)"></app-login> -->
+<!-- {{ count }} -->
+<!-- </div> -->
+
+<!-- <h2> Courses List </h2> -->
+
+
+<!-- <br/><br/> -->
+
+<!-- <div *ngIf="message">{{message}}</div> -->
+
+<!-- <h2> Popular Courses </h2>
+<button (click)="show=true">View Courses list</button><br /><br />
+<div *ngIf="show">
+<app-course-list></app-course-list>
+</div> -->
+
+
+<!-- Nested -->
+
+<!-- <div class="container">
+  <h2>Course Details</h2>
+  <p>Select a course to view</p>
+  <select [(ngModel)]="selectedCourseValue">
+    <option *ngFor="let courseitem of courseitems" [value]="courseitem.id">
+      {{ courseitem.name }}
+    </option>
+  </select>
+  <app-course-list [courseitem]="courseitems[selectedCourseValue - 1]"></app-course-list>
+</div> -->
+
+<!-- <app-templatedrivenform></app-templatedrivenform> -->
+<app-reactivedrivenform></app-reactivedrivenform>
